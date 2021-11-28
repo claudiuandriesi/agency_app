@@ -1,0 +1,13 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  height: 100vh;
+}
+
+@media all and (max-width: 767px) {
+  .register-page {
+    padding: 0;
+  }
+}

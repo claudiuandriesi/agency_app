@@ -1,0 +1,12 @@
+.agency {
+  height: 100vh!important;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}

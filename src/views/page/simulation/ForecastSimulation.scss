@@ -1,0 +1,71 @@
+.forecast-simulation {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+}
+.forecast-col {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  & > * {
+    margin: 1rem;
+  }
+}
+.input-container {
+  transition: all 3s ease-out;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .2);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4dbecf;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  h2 {
+    color: #2E3C40;
+  }
+}
+
+.move-left {
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  transition: all 1s ease-out;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.simulation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+  .forecast-simulation {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+  }
+
+  .visible {
+    width: 90%;
+  }
+}

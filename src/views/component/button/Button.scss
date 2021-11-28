@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+@keyframes short-press {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.submit-button {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1px;
+  height: 38px;
+  line-height: 38px;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .2);
+  background: #4dbecf;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    background: #2E3C40;
+    &.secondary {
+      background: rgba(#000000, .2);
+      border-color: rgba(#000000, .02);;
+      span {
+        color: white;
+      }
+    }
+  }
+  &:focus {
+    box-shadow: 0 5px 15px rgba(black,.1);
+  }
+
+  &.animated {
+    animation: .2s short-press ;
+  }
+
+  > span {
+    display: block;
+    color: white;
+    text-align: center;
+  }
+}
+.secondary {
+  background: white;
+  border: 0.05rem solid #4dbecf;
+  span {
+    color: #4dbecf;
+  }
+  &:hover {
+    border-color: gray;
+  }
+}
